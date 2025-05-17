@@ -1,0 +1,167 @@
+/*
+Hoja de estilo responsivo y con transiciones
+Autor:
+*/
+a:link {
+    color: #1E90FF; /* azul fuerte */
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+a:visited {
+    color: #8B008B; /* púrpura oscuro */
+    font-weight: lighter;
+}
+
+a:hover {
+    color: #B22222; /* rojo vino */
+    font-weight: bold;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+a.menu {
+    display: block;
+    text-decoration: none;
+}
+
+p {
+    margin-left: 0.5em;
+    margin-bottom: 0.06em;
+    border-style: inset;
+    border-width: medium;
+    border-color: #4682B4; /* azul acero */
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+p.otro {
+    border-style: outset;
+}
+
+body {
+    font-family: Verdana, Helvetica, Arial, "Times New Roman";
+    color: #FFFFFF; /* blanco */
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+    margin-inline-start: 0.3em;
+    margin-inline-end: 0.2em;
+    background-color: #121212; /* casi negro */
+}
+
+img, video, canvas {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+header {
+    padding-top: 0.05em;
+    height: 5em;
+    color: #FFFFFF; /* blanco */
+    font-weight: bold;
+    font-size: large;
+    background-color: #B22222; /* rojo vino */
+    text-transform: capitalize;
+    text-shadow: 0.2em 0.2em 0.5em #000000; /* sombra negra */
+}
+
+figure.logo {
+    display: inline;
+    width: 10px;
+    height: 10px;
+}
+
+img.logo {
+    width: 70px;
+    height: 70px;
+}
+
+nav {
+    background-color: #000000; /* negro */
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana, sans-serif;
+    color: #FFFFFF; /* blanco */
+    transition: padding 0.3s ease;
+}
+
+nav li:hover {
+    padding: 10px;
+}
+
+aside {
+    float: right;
+    width: 220px;
+    height: auto;
+    margin: 20px 0;
+    padding: 20px;
+    background: #1E1E1E; /* gris casi negro */
+    color: #FFFFFF;
+    transition: width 0.3s ease;
+}
+
+section {
+    float: left;
+    width: 75%;
+    height: auto;
+    min-height: 30em;
+    margin: 20px;
+    background-color: #2F4F4F; /* gris verdoso oscuro */
+    color: #FFFFFF;
+    text-transform: none;
+    padding: 20px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    font-size: 75%;
+    padding: 0.625em 0.9em 1.4em;
+    background-color: #1C1C1C; /* gris muy oscuro */
+    color: #CCCCCC;
+    text-align: center;
+    min-height: 2em;
+    float: left;
+}
+
+#titPral {
+    display: inline;
+    vertical-align: 90%;
+}
+
+/* Para ajuste responsivo */
+@media screen and (max-width: 800px) {
+    header {
+        height: auto;
+    }
+
+    nav {
+        float: none;
+        width: auto;
+    }
+
+    section {
+        float: none;
+        width: auto;
+    }
+
+    aside {
+        float: none;
+        width: auto;
+    }
+
+    footer {
+        font-size: 65%;
+        padding: 0.5em 0.7em;
+    }
+
+    nav li {
+        padding: 10px;
+    }
+}
