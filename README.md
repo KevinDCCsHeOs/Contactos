@@ -6,7 +6,7 @@ Este proyecto es una **agenda de contactos web** desarrollada con PHP y MySQL. P
 
 ## 📦 Requisitos
 
-- [XAMPP](https://www.apachefriends.org/es/index.html) instalado en tu sistema.
+- XAMPP instalado en nuestro sistema.
 - PHP 7.x o superior.
 - MySQL y phpMyAdmin (incluidos en XAMPP).
 
